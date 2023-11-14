@@ -8,8 +8,8 @@ from color import set_background_color
 import os
 
 # Def des infos
-profile_pic_path = "C:C:\Users\dorge\OneDrive\Bureau\Venvtest\CV_Test\CV\Annexe\Pedobear.jpg" #changer le chemin fonction de l'ordinateur
-fichierpdf = "C:\Users\dorge\OneDrive\Bureau\Venvtest\CV_Test\CV\Annexe\test.pdf"
+profile_pic_path = "C:/Users/dorge/OneDrive/Bureau/Venvtest/CV_Test/CV/Annexe/Pedobear.jpg" 
+fichierpdf = "C:/Users/dorge/OneDrive/Bureau/Venvtest/CV_Test/CV/Annexe/test.pdf"
 PAGE_TITLE = 'CV | Guillaume Dorges'
 PAGE_ICON = ':partying_face::partying_face:'
 NAME = 'Guillaume Dorges'
