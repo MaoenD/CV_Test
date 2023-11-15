@@ -4,22 +4,22 @@ import altair as alt
 
 langues = ['Français', 'Anglais', 'Espagnol']
 levels = [4, 4, 3]
-colors = ['#FF5733', '#90FF33', '#5733FF']  # Define colors for each language
+colors = ['#FF5733', '#90FF33', '#5733FF']  #def des couleurs
 
 data = pd.DataFrame({'Langue': langues, 'Niveau': levels, 'Color': colors})
 
 def display_language_skills():
-    # Create the chart with color encoding
+    # création charte
     chart = alt.Chart(data).mark_bar().encode(
         x='Niveau',
         y='Langue',
-        color=alt.Color('Color:N', legend=None)  # Color encoding based on 'Color' column
+        color=alt.Color('Color:N', legend=None) 
     ).properties(
         width=200,
         height=400,
     )
 
-    # Display the chart with a title
+    # Display de la charte
     st.altair_chart(chart, use_container_width=True)
 
 if __name__ == "__main__":
