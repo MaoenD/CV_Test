@@ -11,7 +11,7 @@ import os
 
 # Def des infos
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-profile_pic_path = current_dir /"Annexe" /"Pedobear.jpg"
+profile_pic_path = current_dir /"Annexe" /"PedoBear.jpg"
 fichierpdf = current_dir / "Annexe" /"test.pdf"
 PAGE_TITLE = 'CV | Guillaume Dorges'
 PAGE_ICON = ':partying_face::partying_face:'
