@@ -1,3 +1,5 @@
+from pathlib import Path
+
 import streamlit as st
 from PIL import Image
 from langue import display_language_skills
@@ -8,8 +10,8 @@ from color import set_background_color
 import os
 
 # Def des infos
-profile_pic_path = "C:/Users/dorge/OneDrive/Bureau/Venvtest/CV_Test/CV/Annexe/Pedobear.jpg" 
-fichierpdf = "C:/Users/dorge/OneDrive/Bureau/Venvtest/CV_Test/CV/Annexe/test.pdf"
+profile_pic_path = current_dir / "Annexe" /"Pedobear.jpg"
+fichierpdf = current_dir / "Annexe" /"test.pdf"
 PAGE_TITLE = 'CV | Guillaume Dorges'
 PAGE_ICON = ':partying_face::partying_face:'
 NAME = 'Guillaume Dorges'
@@ -18,16 +20,6 @@ RECONVERSION EN INFORMATIQUE
 """
 EMAIL = "dorges.guillaume@gmail.com"
 SOCIAL_MEDIA_URL = 'http://github.com/MaoenD'
-experiences = {
-    "Janet Moyer Landscaping": (2011, 2016),
-    "Kalozia Garden": (2016, 2017),
-    "Jardin du": (2017, 2023),
-}
-locations = [
-    {"name": "Location 1", "address": "1031 Valencia Street, San Francisco, CA 94110"},
-    {"name": "Location 2", "address": "43 Rue des Tartres, 92500, Rueil-Malmaison"},
-    {"name": "Location 3", "address": "Le Surena, Face au 5 Quai Marcel Dassault, 92150 SURESNES"},
-]
 
 try:
     with open(fichierpdf, "rb") as pdf_file:
@@ -63,6 +55,7 @@ with col2:
     st.write('Adresse: 68 rue du colonel de rochebrune, 92380 Garches')
     st.write('Email:', EMAIL)
     st.write('Téléphone: +33 6 25 11 77 12')
+    st.write(SOCIAL_MEDIA_URL)
     st.download_button(
         label=" 📄 Test CV",
         data=PDFbyte,
