@@ -43,7 +43,7 @@ st.markdown("<h1 style='color: darkred; font-size: 3.0em;'>Curriculum Vitae</h1>
 
 st.markdown(f"# {NAME}")
 
-profile_pic = Image.open("./Annexe/Pedobear.jpeg")
+profile_pic = Image.open("./Annexe/Pedobear.jpg")
 
 col1, col2 = st.columns(2, gap="small")
 with col1:
