@@ -12,7 +12,7 @@ import os
 # Def des infos
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 profile_pic_path = current_dir /"Annexe" /"PedoBear.jpg"
-fichierpdf = current_dir / "Annexe" /"test.pdf"
+fichierpdf = current_dir / "Annexe" /"CV Guillaume Dorges.pdf"
 PAGE_TITLE = 'CV | Guillaume Dorges'
 PAGE_ICON = ':partying_face::partying_face:'
 NAME = 'Guillaume Dorges'
@@ -78,28 +78,36 @@ st.write("")
 # Expériences professionnelles
 st.markdown("<h3 style='color: pink;'>🧭 Mes expériences professionnelles</h3>", unsafe_allow_html=True)
 
-with st.expander("Jardin du Roy (2017-2023)"):
+with st.expander("Jardin du Roy (2018-2023)"):
     st.write('Chef de chantier')
-    st.write('équipe de 15 personnes')
+    st.write('3 équipes allant de 5 à 9 personnes')
+    st.write('formation des apprentis')
     st.write("- Management des différentes équipes") 
     st.write("- Plannification des chantiers")
     st.write('- Négociation fournisseurs')
     st.write("- Administratif divers")
 
-with st.expander("Kalozia Garden (2016-2017)"):
+with st.expander("Kalozia Garden (2017-2018)"):
     st.write("Chef d'équipe")
-    st.write('équipe de 6 personnes')
+    st.write('équipe de 4 à 6 personnes')
     st.write("- Management de l'équipe")
     st.write("- Contrôle qualité")
     st.write("- Formation des apprentis")
     st.write("- Administratif divers")
 
 
-with st.expander("Janet Moyer Landscaping (2011-2016)"):
+with st.expander("Janet Moyer Landscaping (2013-2017)"):
     st.write('Ouvrier Paysagiste')
     st.write("taille, tonte")
     st.write("contruction de terasse extérieure")
     st.write("maçonnerie diverse")
+
+
+with st.expander("Castorama (2011-2013)"):
+    st.write('Chef de rayon')
+    st.write("management équipe de 4 personnes")
+    st.write("Développement des ventes")
+    st.write("Respect des objectifs")
 
 st.write("")
 
